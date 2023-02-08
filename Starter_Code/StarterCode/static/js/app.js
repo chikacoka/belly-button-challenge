@@ -1,10 +1,6 @@
 // Use the D3 library to read in sample.json/ get the endpoint
 const samples = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json"
 
-// Fetch the JSON data and console log it
-// d3.json(samples).then(function (data) {
-//     console.log(data);
-// });
 
 function metaData(sample) {
 
@@ -25,6 +21,7 @@ d3.json(samples).then(function (data) {
 });
 }
 
+// Create the horizontal bar chart with a function and then assign relevant variables as input to the chart
 function otuPlot(sample) {
     d3.json(samples).then(function (data) {
         let sampleData = data.samples;
@@ -92,7 +89,7 @@ function plotBubbleChart(sample) {
 }
 
 
-
+// Create a function for the dropdown
 function dropDown(){
     let objectDropDown = d3.select("#selDataset");
     d3.json(samples).then(function (data) {
@@ -113,6 +110,7 @@ function dropDown(){
 
 }
 dropDown();
+
 function optionChanged(newSample) {
     // Fetch new data each time a new sample is selected
     metaData(newSample);
