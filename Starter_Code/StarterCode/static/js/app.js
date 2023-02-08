@@ -50,53 +50,15 @@ function otuPlot(sample) {
         };
         Plotly.newPlot("bar", barData, layout);
 
-        //Create a bubble chart that displays each sample.
-        //Create a bubble chart that displays each sample.
+     
+       
 
         
 
     });
 }
-        //add all info for the bubble chart and function when dropdown is changed
-       //sampleValue
-      
-// function buildBubbleChart(sample) {
-//     d3.json(samples).then(function (data) {
-//         let sampleData = data.samples;
-//         let sampleId = sampleData.filter(sampleOtu => sampleOtu.id == sample);
-//         let result = sampleId[0];
-//         let sampleValues = result.sample_values;
-//         let otuIds = result.otu_ids;
-//         let otuLabels = result.otu_labels;
-//         let bubbleChart = [{
-//             y: sampleValues,
-//             x: otuIds,
-//             text: otuLabels,
-//             mode: "markers",
-//             marker: {
-//                 size: sampleValues,
-//                 color: otuIds,
-//                 colorscale: "Earth"
-//                     }
-//         }];
-
-//         let layout = {title: "Bacteria Culture Per Sample", hovermode: "closest", xaxis: { title: "OTU ID" }
-//             };
-
-//         Plotly.newPlot("bubble", [bubbleChart], layout);
-//         });
-
-//         }
-
-
-
-//     });
-// }
-
-
-
- //Create a bubble chart that displays each sample.
-
+    
+   //Create a bubble chart that displays each sample.
 function plotBubbleChart(sample) {
     d3.json(samples).then(function (data) {
         let sampleData = data.samples;
@@ -121,13 +83,14 @@ function plotBubbleChart(sample) {
             title: "Bacteria Culture Per Sample", hovermode: "closest", xaxis: { title: "OTU ID" }
         };
 
-        Plotly.newPlot("bubble", [bubbleChart], layout);
+        Plotly.newPlot("bubble", bubbleChart, layout);
 
 
         
     });
 
 }
+
 
 
 function dropDown(){
