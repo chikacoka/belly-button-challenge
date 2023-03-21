@@ -69,8 +69,10 @@ Use console.log inside of your JavaScript code to see what your data looks like 
 
 Refer to the Plotly.js documentation Links to an external site.when building the plots.
 
-## References:
+## References
 
 https://d3js.org/
 
 https://plotly.com/javascript/
+
+Hulcr, J. et al. (2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/
