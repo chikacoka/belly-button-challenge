@@ -69,7 +69,8 @@ Use console.log inside of your JavaScript code to see what your data looks like 
 
 Refer to the Plotly.js documentation Links to an external site.when building the plots.
 
-References:
+## References:
 
 https://d3js.org/
+
 https://plotly.com/javascript/
